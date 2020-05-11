@@ -1,0 +1,31 @@
+---
+title: "Exercise 1"
+author: "Alexa"
+output:
+  word_document: default
+  html_document: default
+---
+
+# Reflection
+
+
+
+
+# My first plot
+
+I wish I knew more about cars so I knew what hwy and displ were and what they are good for. Would help to have a driving license I guess. 
+
+```{r load-libraries-data, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+
+setwd("~/Data_viz_class")
+cars <- read_csv("data/cars.csv")
+```
+
+```{r Plot of cars dataset, echo=FALSE, warning=FALSE}
+ggplot(cars, aes(x = displ, y = hwy, color = as.factor(year))) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+
+```
+
