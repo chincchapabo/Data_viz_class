@@ -13,7 +13,7 @@ output:
 
 # My first plot
 
-I wish I knew more about cars so I knew what hwy and displ were and what they are good for. Would help to have a driving license I guess. 
+I wish I knew more about cars so I knew what hwy and displ were and what they were good for. Based on the graph they seem to have a linear negative correlation. 
 
 ```{r load-libraries-data, message=FALSE, warning=FALSE, include=FALSE}
 library(tidyverse)
